@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+:root {
+    --light: #EFE4D2;
+    --blue-dark: #254D70;
+    --navy: #131D4F;
+    --brown: #954C2E;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navy);
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    color: var(--light);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--brown);
+}
+
+.placards-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Increased space between placards */
+    margin: 80px auto;
+    max-width: 1500px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 420px;  /* Increased width */
+    height: 460px; /* Slightly shorter for balance */
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    background-color: var(--blue-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: var(--light);
+}
+
+.card-front img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card-front h2 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: var(--brown);
+    font-weight: 700;
+}
+
+.card-front p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    font-size: 16px;
+}
+
+.card-back p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.more-btn {
+    background-color: var(--brown);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.more-btn:hover {
+    background-color: #7d3b22;
+}
