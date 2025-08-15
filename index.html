@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAMES '25 Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      width: 250px;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff6f61;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #ff4f41;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FLAMES '25 Projects</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Birthday Card</h2>
+      <a href="bdaycard.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h2>Tour Destination</h2>
+      <a href="destinations.html">View Project</a>
+    </div>
+
+    <div class="card">
+      <h2>Timetable</h2>
+      <a href="timetable.html">View Project</a>
+    </div>
+  </main>
+</body>
+</html>
